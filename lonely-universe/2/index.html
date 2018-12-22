@@ -4,40 +4,9 @@
   <meta charset="utf-8"/>
   <title>Lonely Universe</title>
 
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
   <script src="scripts/main.js"></script>
-
-  <style type="text/css">
-    html,
-    body {
-      background-color: black;
-      margin: 0;
-      padding: 0;
-    }
-
-    #mapContainer {
-      position: absolute;
-      max-height: 100vh;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      overflow:hidden;
-    }
-
-    #mapContainer #map {
-      margin: 0 auto;
-      width: 200vh;
-    }
-
-    #mapContainer #map svg {
-      max-height: 100%;
-      max-width: 100%;
-    }
-
-    .unclickable {
-      pointer-events: none;
-    }
-  </style>
 </head>
 <body onload="renderGalaxy(0.8)" onmouseup="mouseUp(event)" onmousemove="mouseMove(event)">
   <div id="mapContainer"><div id="map" onmousedown="mouseDown(event)"></div>

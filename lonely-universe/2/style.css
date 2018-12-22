@@ -1,0 +1,30 @@
+html,
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#mapContainer {
+  position: absolute;
+  max-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
+}
+
+#mapContainer #map {
+  margin: 0 auto;
+  width: 200vh;
+}
+
+#mapContainer #map svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.unclickable {
+  pointer-events: none;
+}
