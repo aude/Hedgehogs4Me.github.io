@@ -77,7 +77,7 @@ function renderGalaxy(zoom, topLeftX, topLeftY, gal) {
     return;
   }
 
-  var galaxyMap = document.getElementById("map");
+  var galaxyMap = document.body;
   galaxyMap.innerHTML = ""; //lazy me
 
   var svgns = "http://www.w3.org/2000/svg",
@@ -399,3 +399,7 @@ function logGalaxyInfo(gal) {
 // }
 
 var defaultGalaxy = new galaxy(100, 1200, 200);
+
+function init() {
+  renderGalaxy(0.8);
+}
